@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -26,6 +27,12 @@ android {
             )
         }
     }
+    buildFeatures{
+        dataBinding = true
+        viewBinding = true
+
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -34,7 +41,6 @@ android {
         jvmTarget = "1.8"
     }
 }
-
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -42,9 +48,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.database.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.google.firebase:firebase-database:20.2.0")
+    implementation ("com.google.firebase:firebase-analytics:21.1.1")
+    implementation ("com.google.firebase:forebase-storage")
+    implementation ("com.google.firebase:firebase-firestore")
 }

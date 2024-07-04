@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/updata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/upbg"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/upowner"
+            android:background="@drawable/borderbg"
+            android:layout_marginTop="20dp"
+            android:hint="Masukan Nama"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/upcid"
+            android:background="@drawable/borderbg"
+            android:layout_marginTop="20dp"
+            android:hint="Masukan No. KTP"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/upcar"
+            android:background="@drawable/borderbg"
+            android:layout_marginTop="20dp"
+            android:hint="Masukan Kendaraan"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/upidcar"
+            android:background="@drawable/borderbg"
+            android:layout_marginTop="20dp"
+            android:hint="Masukan Plat Nomor"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="start|center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Upload"
+        android:id="@+id/mainUpload"
+        android:textSize="25sp"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="140dp"/>
+
+
+</LinearLayout>
