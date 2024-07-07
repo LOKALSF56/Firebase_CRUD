@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity,Inpudata::class.java)
             startActivity(intent)
             finish()
+
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
