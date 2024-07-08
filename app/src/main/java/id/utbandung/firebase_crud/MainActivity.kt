@@ -17,10 +17,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
-        binding.mainUpload.setOnClickListener{
-            val intent = Intent(this@MainActivity,Inpudata::class.java)
+        binding.mainUpload.setOnClickListener {
+            val intent = Intent(this@MainActivity, Inpudata::class.java)
             startActivity(intent)
             finish()
+            binding.uptdb.setOnClickListener {
+                val intent = Intent(this@MainActivity, UpdateInfo::class.java)
+                startActivity(intent)
+                finish()
+
+            }
+            binding.deldata.setOnClickListener {
+                val intent = Intent(this@MainActivity, Deletedata::class.java)
+                startActivity(intent)
+                finish()
+
+            }
 
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

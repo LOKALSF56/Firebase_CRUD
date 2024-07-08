@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Firebase_CRUD"
         tools:targetApi="31">
         <activity
+            android:name=".Deletedata"
+            android:exported="false" />
+        <activity
             android:name=".UpdateInfo"
             android:exported="false" />
         <activity
